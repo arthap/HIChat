@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/home/art/Downloads/HIChat/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="beac40bcc8a320a896dd15f5109cfcaea5e1e0e3">
+        <dex dex="/home/art/Downloads/HIChat/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-24.2.0_beb569b7a85e2879dfd7d0a258a1357e01ad6da3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/art/Downloads/HIChat/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="f9b41622897665678d31d78e57a361cb0cebcb0d">
+        <dex dex="/home/art/Downloads/HIChat/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-24.2.0_3692d9fa43d51cf1d0adaa5bb776e2eedb840674/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/art/Downloads/HIChat/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/jars/libs/internal_impl-24.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="771b3cc0e597b54da25f8086ba73180c59c6bc71">
+        <dex dex="/home/art/Downloads/HIChat/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.0_4083f5f0e6ead741756aa341c8f5035c7a790ae0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/art/Downloads/HIChat/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.0/jars/libs/internal_impl-24.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="60d7b23621d31e6f42f4f76f16af467e57a20cda">
+        <dex dex="/home/art/Downloads/HIChat/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.0_070e42df0d0de456ac1c8546a02414fedfb57169/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/art/Downloads/HIChat/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="6eb9107eb34d2fe2b020662b7fbbec991dcba846">
+        <dex dex="/home/art/Downloads/HIChat/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-24.2.0_f51de51d91e351dcdabd97939b795cf2ecbca1bb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/art/Downloads/HIChat/app/build/intermediates/exploded-aar/com.android.support/design/24.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="23eb0d2998a782213b56168cbf23a0688b9111d9">
+        <dex dex="/home/art/Downloads/HIChat/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-24.2.0_d246e4ce39f0265c60ffa2d4825920f77835b830/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/art/Downloads/HIChat/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/24.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="c755536e5a100d9c76c8ea0b72f76c018f7a9de2">
+        <dex dex="/home/art/Downloads/HIChat/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-24.2.0_14594bb1e22a8fbe1ba5d731afbab03801cb2786/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/art/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/24.2.0/support-annotations-24.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="6be858a75633b1f0a2d24cad740db57775cb6871">
+        <dex dex="/home/art/Downloads/HIChat/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.2.0_c25d43d4ab31efe085f374311f0447d198125c6f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/art/.gradle/caches/modules-2/files-2.1/org.springframework.android/spring-android-rest-template/1.0.1.RELEASE/e132d929bd181941f79b0d63edafb8a86ae6fd33/spring-android-rest-template-1.0.1.RELEASE.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="e132d929bd181941f79b0d63edafb8a86ae6fd33">
+        <dex dex="/home/art/Downloads/HIChat/app/build/intermediates/transforms/dex/debug/folders/1000/10/spring-android-rest-template-1.0.1.RELEASE_7c82c853efaf9a800e070d72ee09857905230ade/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/art/Downloads/HIChat/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="c84e216d9bf618464d6b9564d71d9a656433e7c4">
+        <dex dex="/home/art/Downloads/HIChat/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-24.2.0_749e01165bc444e396c9cf73525c2eb8372ed337/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/art/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.8.2/80004060cc6f71a027b81e89ef4d74628f824f/jackson-core-2.8.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="0080004060cc6f71a027b81e89ef4d74628f824f">
+        <dex dex="/home/art/Downloads/HIChat/app/build/intermediates/transforms/dex/debug/folders/1000/10/jackson-core-2.8.2_9fa8cf56ecc3a00e30c04e4d53acbb84265dff73/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/art/.gradle/caches/modules-2/files-2.1/org.springframework.android/spring-android-core/1.0.1.RELEASE/e68f0e8e4b636ee30c4de58953be38d9b72a5e3b/spring-android-core-1.0.1.RELEASE.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="e68f0e8e4b636ee30c4de58953be38d9b72a5e3b">
+        <dex dex="/home/art/Downloads/HIChat/app/build/intermediates/transforms/dex/debug/folders/1000/10/spring-android-core-1.0.1.RELEASE_1fd510547a3af58744b345fc9899cb4fa1c0f8d4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/art/Downloads/HIChat/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="88e21a7fb7ffd8dd80a2c8dd34c1866ac3d2be80">
+        <dex dex="/home/art/Downloads/HIChat/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_770d067f10d8004114d57f9d2eb51f7b19bbbc10/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/art/Downloads/HIChat/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.0/jars/libs/internal_impl-24.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="6e02e34594ebe9c0501ffda8dd48497f81b82977">
+        <dex dex="/home/art/Downloads/HIChat/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.0_bdb572997ed17134bedea59d857dc03f9b8bc786/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/art/Downloads/HIChat/app/build/intermediates/exploded-aar/com.android.volley/volley/1.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="2cd4b982617e544728de0782d718a58ce1b06e3f">
+        <dex dex="/home/art/Downloads/HIChat/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.volley-volley-1.0.0_6cc4f5c1093b52cc394a56d6fa62c565f788aa74/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/art/Downloads/HIChat/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="45f5eda279825ff470e3f51019d374d1ef61e000">
+        <dex dex="/home/art/Downloads/HIChat/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.2.0_4160ec1a4f3a21daddcae4fbbed9cd01d43484ed/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/art/.gradle/caches/modules-2/files-2.1/cz.msebera.android/httpclient/4.3.6/526a9f794eab830eae4f23a62c572878b3f491ab/httpclient-4.3.6.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="526a9f794eab830eae4f23a62c572878b3f491ab">
+        <dex dex="/home/art/Downloads/HIChat/app/build/intermediates/transforms/dex/debug/folders/1000/10/httpclient-4.3.6_57410fa6d7c54274db851b8baf32c11fb28e02ff/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/art/Downloads/HIChat/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="c3c638be6e650b165ab9ae144857b64e82787fad">
+        <dex dex="/home/art/Downloads/HIChat/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-24.2.0_f3a168aca4d07e3664bd430776e04640d53923f7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/art/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.8.0/45b426f7796b741035581a176744d91090e2e6fb/jackson-annotations-2.8.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="45b426f7796b741035581a176744d91090e2e6fb">
+        <dex dex="/home/art/Downloads/HIChat/app/build/intermediates/transforms/dex/debug/folders/1000/10/jackson-annotations-2.8.0_7b62617bdca3ae1855517a2aa2e0a3f715751566/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/art/.gradle/caches/modules-2/files-2.1/com.loopj.android/android-async-http/1.4.9/386a4339ffe52d5d63e80f9bed8d2b1d1a418249/android-async-http-1.4.9.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="386a4339ffe52d5d63e80f9bed8d2b1d1a418249">
+        <dex dex="/home/art/Downloads/HIChat/app/build/intermediates/transforms/dex/debug/folders/1000/10/android-async-http-1.4.9_e293626bf441ca1e730cba96e6732cea1d67b090/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/art/Downloads/HIChat/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="f3ee23ef25c9a8fe3d40246d0b7097267963a612">
+        <dex dex="/home/art/Downloads/HIChat/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-24.2.0_021da148c9d6d91c45ec0a47485c4cc66292c8ac/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/art/Downloads/HIChat/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.0/jars/libs/internal_impl-24.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="045be695d968dd707691cc55d23746dbf8cf569a">
+        <dex dex="/home/art/Downloads/HIChat/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.0_09d5632e46e139ca3e1b42a8ba333c7bea1db8cc/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/art/Downloads/HIChat/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="fcc945a86ebcbf527429acb8216ec7dae2c06417">
+        <dex dex="/home/art/Downloads/HIChat/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-24.2.0_9366e808f02de6dd8168f7ffe1ac9cb4fba7f581/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/art/Downloads/HIChat/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="f3e1e3d6e6e195b518757a62e5133e7054abbc69">
+        <dex dex="/home/art/Downloads/HIChat/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_2ebb80a65fb6039bb7747179f168cb6c8e4b1edc/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/art/Downloads/HIChat/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="d8bd2268fdcbfd52c76ade65d9900cd8def93a44">
+        <dex dex="/home/art/Downloads/HIChat/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-24.2.0_a75757e0902cc0ca5da189bac58d3ca784a082d6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/art/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.8.2/1f12816593c1422be957471c98a80bfbace60fa2/jackson-databind-2.8.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="1f12816593c1422be957471c98a80bfbace60fa2">
+        <dex dex="/home/art/Downloads/HIChat/app/build/intermediates/transforms/dex/debug/folders/1000/10/jackson-databind-2.8.2_c4095cd3d19626b553e53ea6736fb47ca1d18ed3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/art/Downloads/HIChat/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.0/jars/libs/internal_impl-24.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="032a4b53def5e2ceedfc2e793b126c0163cfa1dd">
+        <dex dex="/home/art/Downloads/HIChat/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.0_3ababe15a3bb70f2e0dc0a4e5f161e7455f02bb4/classes.dex" />
+    </item>
+
+</items>
