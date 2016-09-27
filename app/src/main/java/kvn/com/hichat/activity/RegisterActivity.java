@@ -10,6 +10,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.android.volley.ParseError;
 import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
@@ -87,7 +88,11 @@ public class RegisterActivity extends AppCompatActivity {
         user.setFirstName(name);
         user.setEmail(email);
         user.setPassword(password);
-        UserHTTPClient.registerUser(user);
+        try {
+            UserHTTPClient.registerUser(user);
+        } catch (ParseError parseError) {
+            parseError.printStackTrace();
+        }
       /*  // Tag used to cancel the request
         String tag_string_req = "req_register";
 

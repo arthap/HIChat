@@ -1,28 +1,19 @@
 package kvn.com.hichat.http;
 
-import android.widget.Toast;
-
-import com.android.volley.AuthFailureError;
-import com.android.volley.DefaultRetryPolicy;
+import com.android.volley.ParseError;
 import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
-import com.android.volley.VolleyLog;
-import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.StringRequest;
+import com.fasterxml.jackson.databind.JavaType;
 import com.fasterxml.jackson.databind.ObjectMapper;
-
-import org.json.JSONException;
-import org.json.JSONObject;
+import com.fasterxml.jackson.databind.type.SimpleType;
+import com.spothero.volley.JacksonRequest;
+import com.spothero.volley.JacksonRequestListener;
 
 import java.io.IOException;
-import java.io.StringWriter;
-import java.io.UnsupportedEncodingException;
-import java.util.HashMap;
-import java.util.Map;
 
 import kvn.com.hichat.ApplicationController;
-import kvn.com.hichat.MainActivity;
 import kvn.com.hichat.entity.User;
 
 /**
@@ -57,45 +48,43 @@ public class UserHTTPClient {
         return  user;
     }
 
-    public static void registerUser(final User user){
+    public static User get(){
+        final String URL = "http://192.168.6.59:8080/user/registration";
+        JacksonRequest j =  new JacksonRequest<User>(Request.Method.GET,
+                URL,
+                new JacksonRequestListener<User>() {
+                    @Override
+                    public void onResponse(User response, int statusCode, VolleyError error) {
+                        System.out.println(response);
+                    }
+
+                    @Override
+                    public JavaType getReturnType() {
+                        return SimpleType.construct(User.class);
+                    }
+                });
+
+        ApplicationController.getInstance().addToRequestQueue(j);
+        return null;
+    }
+
+    public static void registerUser(final User user) throws ParseError {
         final String URL = "http://192.168.6.59:8080/user/registration";
 
-        Map<String,String> params = new HashMap<String, String>();
-        params.put("firstName",user.getFirstName());
-        params.put("password",user.getPassword());
-        params.put("email", user.getEmail());
-        final String stringEmp = user.toString();
-        StringRequest sr = new StringRequest(Request.Method.POST,URL, new Response.Listener<String>() {
+
+        Jackson2Request r = new Jackson2Request(User.class, Request.Method.POST, URL, user, new Response.Listener<User>() {
             @Override
-            public void onResponse(String response) {
-                System.out.println("ok");
+            public void onResponse(User response) {
+                System.out.println(response);
             }
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
                 System.out.println("no");
             }
-        }){
-            @Override
-            protected Map<String,String> getParams(){
-                Map<String,String> params = new HashMap<String, String>();
-                params.put("firstName",user.getFirstName());
-                params.put("password",user.getPassword());
-                params.put("email", user.getEmail());
+        });
 
-                return params;
-            }
-
-            @Override
-            public Map<String, String> getHeaders() throws AuthFailureError {
-                Map<String,String> params = new HashMap<String, String>();
-                params.put("Content-Type","application/x-www-form-urlencoded");
-                return params;
-            }
-        };
-
-        ApplicationController.getInstance().addToRequestQueue(sr);
-
+        ApplicationController.getInstance().addToRequestQueue(r);
     }
 
 
