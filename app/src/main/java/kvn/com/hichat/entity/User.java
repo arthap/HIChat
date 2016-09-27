@@ -2,6 +2,8 @@ package kvn.com.hichat.entity;
 
 import org.json.JSONObject;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Set;
 
 /**
@@ -30,6 +32,14 @@ public class User {
 
     private Set<ChatSession> chatSessions ;
 
+
+    public Map<String,String> userMap(){
+        Map<String,String> us = new HashMap<>();
+        us.put(firstName.toString(),firstName);
+        us.put(email.toString(),email);
+        us.put(password.toString(),password);
+        return us;
+    }
 
    // public User convertUser(JSONObject object)
 
@@ -103,5 +113,18 @@ public class User {
 
     public void setChatSessions(Set<ChatSession> chatSessions) {
         this.chatSessions = chatSessions;
+    }
+
+    @Override
+    public String toString() {
+        return       "id=" + id +
+                ", ssoId='" + "sdf" + '\'' +
+                ", password='" + password + '\'' +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + "sdfs" + '\'' +
+                ", email='" + email + '\'' +
+                ", state='" + "sdf" + '\''
+                ;
+
     }
 }

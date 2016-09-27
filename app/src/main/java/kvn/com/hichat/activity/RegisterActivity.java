@@ -23,6 +23,8 @@ import java.util.Map;
 
 import kvn.com.hichat.ApplicationController;
 import kvn.com.hichat.R;
+import kvn.com.hichat.entity.User;
+import kvn.com.hichat.http.UserHTTPClient;
 
 public class RegisterActivity extends AppCompatActivity {
 
@@ -81,6 +83,11 @@ public class RegisterActivity extends AppCompatActivity {
      *      *
      */
     private void registerUser(final String name, final String email,final String password) {
+        User user = new User();
+        user.setFirstName(name);
+        user.setEmail(email);
+        user.setPassword(password);
+        UserHTTPClient.registerUser(user);
       /*  // Tag used to cancel the request
         String tag_string_req = "req_register";
 
