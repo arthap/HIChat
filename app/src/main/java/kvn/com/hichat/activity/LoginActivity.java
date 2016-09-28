@@ -66,6 +66,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
     private View mProgressView;
     private View mLoginFormView;
     private Button btnLinkToRegister;
+    private UserHTTPClient userHTTPClient;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -87,12 +88,12 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
             }
         });
 
-        Button mEmailSignInButton = (Button) findViewById(R.id.email_sign_in_button);
+        final Button mEmailSignInButton = (Button) findViewById(R.id.email_sign_in_button);
         btnLinkToRegister = (Button) findViewById(R.id.registration_button);
         mEmailSignInButton.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
-             UserHTTPClient.getUser();
+            userHTTPClient.login(mEmailView.getText().toString(),mPasswordView.getText().toString());
 //                attemptLogin();
             }
         });
@@ -108,6 +109,7 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
 
         mLoginFormView = findViewById(R.id.login_form);
         mProgressView = findViewById(R.id.login_progress);
+        userHTTPClient = new UserHTTPClient(this);
     }
 
     private void populateAutoComplete() {

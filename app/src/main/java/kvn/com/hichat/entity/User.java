@@ -32,17 +32,6 @@ public class User {
 
     private Set<ChatSession> chatSessions ;
 
-
-    public Map<String,String> userMap(){
-        Map<String,String> us = new HashMap<>();
-        us.put(firstName.toString(),firstName);
-        us.put(email.toString(),email);
-        us.put(password.toString(),password);
-        return us;
-    }
-
-   // public User convertUser(JSONObject object)
-
     public int getId() {
         return id;
     }
@@ -115,16 +104,5 @@ public class User {
         this.chatSessions = chatSessions;
     }
 
-    @Override
-    public String toString() {
-        return       "id=" + id +
-                ", ssoId='" + "sdf" + '\'' +
-                ", password='" + password + '\'' +
-                ", firstName='" + firstName + '\'' +
-                ", lastName='" + "sdfs" + '\'' +
-                ", email='" + email + '\'' +
-                ", state='" + "sdf" + '\''
-                ;
 
-    }
 }

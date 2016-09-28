@@ -31,7 +31,8 @@ public class RegisterActivity extends AppCompatActivity {
 
     private Button btnRegister;
     private Button btnLinkToLogin;
-    private EditText inputFullName;
+    private EditText inputFirstName;
+    private EditText inputLastName;
     private EditText inputEmail;
     private EditText inputPassword;
     private ProgressDialog pDialog;
@@ -41,7 +42,8 @@ public class RegisterActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
-        inputFullName = (EditText) findViewById(R.id.name);
+        inputFirstName = (EditText) findViewById(R.id.first_name);
+        inputLastName = (EditText) findViewById(R.id.last_name);
         inputEmail = (EditText) findViewById(R.id.email);
         inputPassword = (EditText) findViewById(R.id.password);
         btnRegister = (Button) findViewById(R.id.btnRegister);
@@ -55,11 +57,13 @@ public class RegisterActivity extends AppCompatActivity {
         // Register Button Click event
         btnRegister.setOnClickListener(new View.OnClickListener() {
             public void onClick(View view) {
-                String name = inputFullName.getText().toString().trim();
+                String firstName = inputFirstName.getText().toString().trim();
+                String lastName = inputLastName.getText().toString().trim();
                 String email = inputEmail.getText().toString().trim();
                 String password = inputPassword.getText().toString().trim();
-                if (!name.isEmpty() && !email.isEmpty() && !password.isEmpty()) {
-                    registerUser(name, email, password);
+
+                if (!firstName.isEmpty() && !lastName.isEmpty() && !email.isEmpty() && !password.isEmpty()) {
+                    registerUser(firstName,lastName, email, password);
                 } else {
                     Toast.makeText(getApplicationContext(),
                             "Please enter your details!", Toast.LENGTH_LONG)
@@ -83,9 +87,10 @@ public class RegisterActivity extends AppCompatActivity {
      *      * email, password) to register url
      *      *
      */
-    private void registerUser(final String name, final String email,final String password) {
+    private void registerUser(final String firstName,final String lastName, final String email,final String password) {
         User user = new User();
-        user.setFirstName(name);
+        user.setFirstName(firstName);
+        user.setLastName(lastName);
         user.setEmail(email);
         user.setPassword(password);
         try {
@@ -93,72 +98,6 @@ public class RegisterActivity extends AppCompatActivity {
         } catch (ParseError parseError) {
             parseError.printStackTrace();
         }
-      /*  // Tag used to cancel the request
-        String tag_string_req = "req_register";
-
-        pDialog.setMessage("Registering ...");
-        showDialog();
-        StringRequest strReq = new StringRequest(Request.Method.POST,
-                AppConfig.URL_REGISTER, new Response.Listener<String>() {
-            @Override
-            public void onResponse(String response) {
-                Log.d(TAG, "Register Response: " + response.toString());
-                hideDialog();
-                try {
-                    JSONObject jObj = new JSONObject(response);
-                    boolean error = jObj.getBoolean("error");
-                    if (!error) {
-                        // User successfully stored in MySQL
-                        // Now store the user in sqlite
-                        String uid = jObj.getString("uid");
-
-                        JSONObject user = jObj.getJSONObject("user");
-                        String name = user.getString("name");
-                        String email = user.getString("email");
-                        String created_at = user.getString("created_at");
-                        // Inserting row in users table
-                        db.addUser(name, email, uid, created_at);
-                        Toast.makeText(getApplicationContext(), "User successfully registered. Try login now!", Toast.LENGTH_LONG).show();
-                        // Launch login activity
-                        Intent intent = new Intent(
-                                RegisterActivity.this,
-                                LoginActivity.class);
-                        startActivity(intent);
-                        finish();
-                    } else {
-                        // Error occurred in registration. Get the error
-                        // message
-                        String errorMsg = jObj.getString("error_msg");
-                        Toast.makeText(getApplicationContext(),
-                                errorMsg, Toast.LENGTH_LONG).show();
-                    }
-                } catch (JSONException e) {
-
-                    e.printStackTrace();
-                }
-            }
-        }, new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError error) {
-                Log.e(TAG, "Registration Error: " + error.getMessage());
-                Toast.makeText(getApplicationContext(),
-                        error.getMessage(), Toast.LENGTH_LONG).show();
-                hideDialog();
-            }
-        }) {
-
-            @Override
-            protected Map<String, String> getParams() {
-                // Posting params to register url
-                Map<String, String> params = new HashMap<String, String>();
-                params.put("name", name);
-                params.put("email", email);
-                params.put("password", password);
-                return params;
-            }
-        };
-        // Adding request to request queue
-        ApplicationController.getInstance().addToRequestQueue(strReq, tag_string_req);*/
     }
 
     private void showDialog() {
