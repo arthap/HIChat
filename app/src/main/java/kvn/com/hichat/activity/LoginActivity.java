@@ -35,6 +35,7 @@ import java.util.List;
 
 import kvn.com.hichat.R;
 import kvn.com.hichat.http.UserHTTPClient;
+import kvn.com.hichat.http.callback.VolleyCallback;
 
 import static android.Manifest.permission.READ_CONTACTS;
 
@@ -93,7 +94,12 @@ public class LoginActivity extends AppCompatActivity implements LoaderCallbacks<
         mEmailSignInButton.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View view) {
-            userHTTPClient.login(mEmailView.getText().toString(),mPasswordView.getText().toString());
+            userHTTPClient.login(mEmailView.getText().toString(), mPasswordView.getText().toString(), new VolleyCallback() {
+                @Override
+                public void onSuccess(boolean result) {
+
+                }
+            });
 //                attemptLogin();
             }
         });

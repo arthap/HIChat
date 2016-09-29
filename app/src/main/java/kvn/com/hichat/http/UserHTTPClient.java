@@ -1,9 +1,6 @@
 package kvn.com.hichat.http;
 
-import android.app.Activity;
 import android.content.Context;
-import android.os.Bundle;
-import android.speech.tts.TextToSpeech;
 import android.widget.Toast;
 
 import com.android.volley.ParseError;
@@ -22,11 +19,12 @@ import java.util.HashMap;
 import java.util.Map;
 
 import kvn.com.hichat.ApplicationController;
-import kvn.com.hichat.MainActivity;
-import kvn.com.hichat.activity.LoginActivity;
+import kvn.com.hichat.app.Static;
 import kvn.com.hichat.entity.User;
+import kvn.com.hichat.http.callback.VolleyCallback;
 
-import static android.accounts.AccountManager.KEY_PASSWORD;
+import static android.provider.Telephony.Carriers.PASSWORD;
+import static kvn.com.hichat.app.Static.USER_EMAIL;
 
 /**
  * Created by sevo on 21.09.2016.
@@ -105,25 +103,28 @@ public class UserHTTPClient {
     }
 
 
-    public  void login(final String email, final String password){
+    public  void login(final String email, final String password, final VolleyCallback callback){
+
         StringRequest stringRequest = new StringRequest(Request.Method.POST, URL,
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
+                        callback.onSuccess(true);
                         Toast.makeText(context,response, Toast.LENGTH_LONG).show();
                     }
                 },
                 new Response.ErrorListener() {
                     @Override
                     public void onErrorResponse(VolleyError error) {
+
                         Toast.makeText(context,error.toString(),Toast.LENGTH_LONG).show();
                     }
                 }){
             @Override
             protected Map<String, String> getParams(){
                 Map<String,String> params = new HashMap<String, String>();
-                params.put("email",email);
-                params.put("password",password);
+                params.put(USER_EMAIL,email);
+                params.put(PASSWORD,password);
                 return params;
             }
 
